@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/return_img"
+        android:onClick="register_back"/>
+
+   <FrameLayout
+        android:id="@+id/usernumber_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center" >
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"             
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/username_img"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="20"
+            android:paddingLeft="50dp"
+            android:paddingRight="60dp" 
+            android:hint="学号"/>
+
+    </FrameLayout>
+        
+    <FrameLayout
+            android:id="@+id/usercode_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+            <Button 
+                android:id="@+id/pwd_eye"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/eye_img"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:onClick="pwd_eye"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/password_img" 
+                android:visibility="visible"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="50dp"
+                android:paddingRight="60dp" 
+                android:hint="密码"/>
+
+       </FrameLayout>
+
+   <FrameLayout
+        android:id="@+id/phonenumber_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+            <Button 
+                android:id="@+id/yanzhenggma"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="验证码"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:onClick="yanzhengma"
+                />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"             
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/phonenumber_img"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="50dp"
+            
+            android:hint="手机号"/>
+
+    </FrameLayout>
+    
+    <FrameLayout 
+        android:id="@+id/department_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"             
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/study_img"
+            android:visibility="visible" />
+        <EditText
+            android:id="@+id/department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="50dp"
+            android:paddingRight="60dp" 
+            android:hint="院系"/>
+    </FrameLayout>
+        
+    <FrameLayout 
+        android:id="@+id/dormitory_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"             
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/dormitory_img"
+            android:visibility="visible" />
+        <EditText
+            android:id="@+id/dormitorynumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="50dp"
+            android:paddingRight="60dp" 
+            android:hint="宿舍区"/>
+        
+    </FrameLayout>
+    
+       <Button
+            android:id="@+id/register2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#ff336699"
+            android:textColor="@android:color/white"             
+            android:gravity="center"
+            android:text="注册" 
+            android:onClick="register2"/>
+       
+        <Button
+            android:id="@+id/login2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已有账号，登录"
+            android:background="#00000000"            
+            android:textSize="16sp" 
+            android:onClick="login2"/>
+
+</LinearLayout>
+

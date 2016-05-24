@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/title"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp" 
+		android:background="@drawable/title_bar"
+		android:gravity="center_vertical"  >  
+			
+		<ImageButton 
+	    	android:id="@+id/return_btn"
+	    	android:layout_width="40dp" 
+      		android:layout_height="40dp"
+      		android:layout_alignParentLeft="true" 
+      		android:layout_centerVertical="true"
+      		android:layout_marginLeft="5dp"
+      		android:background="@drawable/return_img"
+			android:onClick="btn_return"/>  		               
+
+		<Button 
+	    	android:id="@+id/send_btn"
+	    	android:layout_width="30dp" 
+      		android:layout_height="30dp"
+      		android:layout_alignParentRight="true" 
+      		android:layout_centerVertical="true"
+      		android:layout_marginRight="5dp"
+      		android:background="@drawable/senddongtai_img"
+			android:onClick="btnsend"/>      
+	</RelativeLayout>
+	
+    <EditText
+       android:id="@+id/send_message"
+       android:layout_width="match_parent"
+       android:layout_height="150dp" 
+       android:hint="请输入..."/>
+
+</LinearLayout>
